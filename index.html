@@ -11,6 +11,7 @@
 
 <body>
   <div class="p-4">
+    <h3 class="mb-4 text-center">Bearer - A Postman Clone</h3>
     <form data-form>
       <div class="input-group mb-3">
         <select class="form-select flex-grow-0 w-auto" data-method>
@@ -19,8 +20,7 @@
           <option value='PUT'>PUT</option>
           <option value='DELETE'>DELETE</option>
         </select>
-        <input required type='url' placeholder="https://example.com"
-          value='https://jsonplaceholder.typicode.com/todos/1' class="form-control" data-url>
+        <input required type='url' placeholder="https://example.com" class="form-control" data-url>
         <button type="submit" class="btn btn-primary">Send</button>
       </div>
       <ul class="nav nav-tabs" role="tablist">
@@ -55,7 +55,7 @@
       </div>
     </form>
 
-    <div class="mt-5 " data-response-section>
+    <div class="mt-5 d-none" data-response-section>
       <h3>Response</h3>
       <div class="d-flex my-2">
         <div class="me-3">Status: <span data-status></span></div>
